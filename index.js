@@ -35,14 +35,3 @@ if (isNaN(longueur) || longueur <= 0 || isNaN(largeur) || largeur <= 0) {
     const perimetre = (parseFloat(longueur) + parseFloat(largeur)) * 2;
     alert("Le perimetre d'un surface de coté " + longueur + "x" + largeur + " est de " + perimetre + "m");
 }
-
-// Dans mon code, je n'ai pas utilisé parsefloat mais c'est parceque j'ai multiplié par 2 la longueur et la largeur donc cela les a déjà transformé en nombre. Mais il est plus propre d'utiliser le parsefloat
-
-//Cette correction intègre la partie bonus que j'ai oublié de faire
-
-// Correction Francis : pour convertir la longueur en m à partir de l'unité saisie par l'utilisateur, j'ai utilisé (comme l'avait suggéré Léonie) 2 tableaux :
-// const unites = ["km","hm","dam","m","dm","cm","mm"];
-// const rapport =[1000,100,10,1,.1,.01,.001];
-// l'indexOf sur le premier me permet de choisir le multiplicateur dans le second :
-// unit = unites.indexOf("dm");
-// long = longueur * rapport[unit]
